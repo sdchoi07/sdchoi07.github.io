@@ -1,79 +1,52 @@
-# ----
-# Site
+# user variables, change this to make custom site.
 
-title: Developer sdChoi
-url: "https://long-pig.cloudvent.net"
-baseurl:
-google_analytics_key:
-show_full_navigation: true
-
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Product documentation template for Jekyll.
+name: Lemma
+desc: Yet another simple theme for Jekyll.
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Developer sdChoi
-  links:
-    - https://github.com/CloudCannon/edition-jekyll-template
+  name: neizod
+  avatar: //gravatar.com/avatar/daa1cc36ed2ab0d13045d5cd2431cde9?s=320
+  profile: |
+    Just another ordinary grad student in computer engineering.
+    I'm interest in programming language, algorithm, and mathematics.
 
-# -----
-# Build
+    I live in Chiang Mai or Bangkok, Thailand.
+    And you may found me around BarCamp event ;D
+  socials:
+    facebook:
+    twitter: //twitter.com/neizod
+    google-plus:
+    github: //github.com/neizod
+    stack-overflow: //stackoverflow.com/users/889578/neizod
+    instagram:
+    pinterest:
+    steam: //steamcommunity.com/id/neizod/
+license: MIT License
 
-timezone: Etc/UTC
 
-permalink: pretty
+# theme variables, change this to make site looks best.
+baseurl: /lemma-theme
+paginate: 2
 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
-
-collections:
-  docs:
-    title: Documentation
-    permalink: /:path/
-    output: true
+# system variables, do not change unless you knew what's it does.
+paginate_path: page/:num
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
+      type: "pages"
     values:
-      layout: default
-  -
-    scope:
-      path: ""
-      type: "docs"
-    values:
-      seo:
-        type: Article
-      _comments:
-        category: Group navigation links with this field
-        order: Used to sort links in the navigation
-      _options:
-        content:
-          width: 800
-          height: 2000
-  -
-    scope:
+      layout: "default"
+  - scope:
       path: ""
       type: "posts"
     values:
-      _comments:
-        type: Marks the impact of this release
+      layout: "post"
 
-# -----------
-# CloudCannon
-
-types:
-  - minor
-  - major
+sass:
+  sass_dir: _sass
+  style: compressed
