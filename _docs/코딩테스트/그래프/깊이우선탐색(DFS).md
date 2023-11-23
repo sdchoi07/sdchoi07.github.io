@@ -1,7 +1,7 @@
 ---
 title: 깊이우선탐색(DFS)
 category: 그래프
-order: 1
+order: 2
 ---
 
 Sync your Facebook contacts with ChatApp. Any of your Facebook friends with ChatApp accounts are automatically added to your contact list!
