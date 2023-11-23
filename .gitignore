@@ -1,4 +1,7 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-Gemfile.lock
+/.idea
+/node_modules
+/exampleSite/public
+/exampleSite/resources/_gen
+/exampleSite/hugo_stats.json
+.DS_Store
+
