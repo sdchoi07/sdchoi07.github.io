@@ -28,8 +28,8 @@ url: "https://sdchoi07.github.io"
 github:
   username: sdchoi07 # change to your github username
 
-twitter:
-  username:  # change to your twitter username
+instagram:
+  username: choi_sae27 # change to your twitter username
 
 social:
   # Change to your full name.
@@ -43,6 +43,7 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
+
 
 google_site_verification: # fill in to your verification string
 
