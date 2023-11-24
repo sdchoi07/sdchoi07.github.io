@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Dev 세동 # the main title
 
-tagline: No pain No agin # it will display as the sub-title
+tagline: 공부방ㅎㅎ # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "assets/img/favicons/sdchoi.png"
+avatar: "/assets/img/sdchoi.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -154,7 +154,7 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: assets/img/favicons
+      path: assets/img/sdchoi.png
     values:
       swcache: true
   - scope:
@@ -163,7 +163,7 @@ defaults:
       swcache: true
 
 sass:
-  style: compressedr
+  style: compressed
 
 compress_html:
   clippings: all
@@ -185,12 +185,10 @@ exclude:
   - package*.json
 
 jekyll-archives:
-  enabled: [categories, categories2,tags]
+  enabled: [categories, tags]
   layouts:
     category: category
-    category2: category2
     tag: tag
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-    category2: /categories2/:name/
