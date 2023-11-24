@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/sdchoi.png"
+avatar: "/assets/img/favicons/sdchoi.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -154,7 +154,7 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: assets/img/sdchoi.png
+      path: assets/img/favicons
     values:
       swcache: true
   - scope:
