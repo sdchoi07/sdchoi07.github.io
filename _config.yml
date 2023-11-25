@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Dev 세동 # the main title
 
-tagline: 공부방ㅎㅎ # it will display as the sub-title
+tagline: 개발일지 ㅎㅎ # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
