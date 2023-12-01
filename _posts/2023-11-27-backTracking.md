@@ -1,7 +1,7 @@
 ---
 title: BackTracking
 date: 2023-11-27 19:28:43 +09:00
-categories: [Collection, BackTracking]
+categories: [자료구조 이론, BackTracking]
 tags:
   [
     BackTracking,
