@@ -1,8 +1,19 @@
+---
+title: 백준15665_N과M11(DFS)
+date: 2023-11-25 14:28:11 +09:00
+categories: [알고리즘, 그래프]
+tags:
+  [
+    백준15665,
+    
+    .
+    .
+    .
+  ]
+---
+
 # <img width="20px"  src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" class="solvedac-tier"> [N과 M (11)](https://www.acmicpc.net/problem/15665) 
 
-| 제출 번호 | 닉네임 | 채점 결과 | 메모리 | 시간 | 언어 | 코드 길이 |
-|---|---|---|---|---|---|---|
-|69880511|djop|맞았습니다!! |241264KB|528ms|Java 8|1422B|
 
 ## 문제
 <p>N개의 자연수와 자연수 M이 주어졌을 때, 아래 조건을 만족하는 길이가 M인 수열을 모두 구하는 프로그램을 작성하시오.</p>
@@ -22,3 +33,71 @@
 
 <p>수열은 사전 순으로 증가하는 순서로 출력해야 한다.</p>
 
+## 나의코드
+
+```java
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class Main {
+static int[] map ;
+static int[] arr;
+static boolean[] visited ;
+static int count = 0 ;
+static StringBuffer sb = new StringBuffer();
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int n = Integer.parseInt(st.nextToken());
+		int m = Integer.parseInt(st.nextToken());
+		
+		map = new int[m];
+		visited = new boolean[n];
+		arr = new int[n];
+		st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 0 ;i < arr.length;i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+		}
+		Arrays.sort(arr);
+		int before = 0 ;
+		for(int i = 0 ;i < n; i++) {
+			int cur = arr[i];
+			map[count] = arr[i];
+			count++;
+			if(before != cur) {
+				dfs(n ,m);
+			}
+			count--;
+			before = cur;
+		}
+		System.out.println(sb.toString());
+	}
+	static void dfs(int n, int m ) {
+		if(m == count) {
+			for(int i = 0 ;i <map.length; i++) {
+				sb.append(map[i] + " ");
+			}
+			sb.append("\n");
+			return;
+		}
+		
+		int before = 0 ;
+		for(int i = 0 ;i < n; i++) {
+			int curNum = arr[i];
+			if(!visited[i] && curNum != before) {
+				map[count] = curNum;
+				before = curNum;
+				count++;
+				dfs(n,m);
+				count--;
+			}
+		}
+	}
+}
+
+```
