@@ -25,8 +25,7 @@ public class Main {
             st = new StringTokenizer(br.readLine(), " ");
             for(int j = 0 ;j < m; j++){
                 map[i][j] = Integer.parseInt(st.nextToken());
-                if(map[i][j] == 1){
-                }
+
             }
         }
         block();
@@ -61,13 +60,7 @@ public class Main {
                 }
             }
         }
-        for(int i = 0 ;i < n; i++){
-            for(int j= 0 ;j <m; j++){
-                if(map[i][j] == 2){
-                    map[i][j] =0;
-                }
-            }
-        }
+
         time++;
         block();
     }
@@ -85,6 +78,7 @@ public class Main {
         if(!q.isEmpty()){
             bfs();
         }else{
+            
             return;
         }
     }
@@ -92,6 +86,7 @@ public class Main {
     static void block(){
         q.add(new int[]{0,0});
         chk = new boolean[n][m];
+        map[0][0] = 2;
         while(!q.isEmpty()){
             int[] cur = q.poll();
             int curX = cur[0];
@@ -101,7 +96,7 @@ public class Main {
                     int nextX = curX + dx[i];
                     int nextY = curY + dy[i];
                     if( nextX>=0 && nextX <n && nextY>=0 && nextY <m){
-                        if(!chk[nextX][nextY] && map[nextX][nextY] == 0){
+                        if(!chk[nextX][nextY] && map[nextX][nextY] != 1){
                             q.add(new int[]{nextX, nextY});
                             map[nextX][nextY] = 2;
                             chk[nextX][nextY] = true;
