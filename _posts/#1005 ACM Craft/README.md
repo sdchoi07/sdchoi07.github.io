@@ -1,8 +1,12 @@
+
+---
+title: 백준20040_사이클게임(union-find)
+date: 2024-01-03 18:05:17 +09:00
+categories: [알고리즘, 그래프]
+---
+
 # <img width="20px"  src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" class="solvedac-tier"> [ACM Craft](https://www.acmicpc.net/problem/1005) 
 
-| 제출 번호 | 닉네임 | 채점 결과 | 메모리 | 시간 | 언어 | 코드 길이 |
-|---|---|---|---|---|---|---|
-|71181625|djop|맞았습니다!! |229732KB|1012ms|Java 8|2734B|
 
 ## 문제
 <p>서기 2012년! 드디어 2년간 수많은 국민들을 기다리게 한 게임 ACM Craft (Association of Construction Manager Craft)가 발매되었다.</p>
