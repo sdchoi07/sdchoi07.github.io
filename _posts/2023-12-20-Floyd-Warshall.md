@@ -1,7 +1,7 @@
 ---
 title: Floyd-Warshall
 date: 2023-12-20 21:55:43 +09:00
-categories: [자료구조 이론, 자료구조 이론]
+categories: [자료구조 이론, floyd-warshall]
 tags:
   [
     Floyd-Warshall ,

@@ -1,7 +1,7 @@
 ---
 title: two_pointer
 date: 2023-12-24 20:40:13 +09:00
-categories: [알고리즘, 자료구조 이론]
+categories: [자료구조 이론, two_pointer]
 tags:
   [
     two_pointer,
