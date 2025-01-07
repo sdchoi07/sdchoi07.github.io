@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 76.5 MB, 시간: 0.06 ms
+메모리: 84.4 MB, 시간: 0.07 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 1월 4일 10:31:51
+2025년 01월 07일 22:15:21
 
 ### 문제 설명
 
@@ -55,18 +55,3 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
-
-## 나의코드
-```java
-class Solution {
-    public int solution(int n) {
-        int answer = 0;
-        for(int i = 1; i <= n; i++){
-            if(n%i == 0) {
-                answer += i;
-            }
-        }
-        return answer;
-    }
-}
-```
